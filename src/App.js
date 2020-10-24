@@ -2,6 +2,7 @@ import React,{Component} from 'react';
 import logo from './logo.svg';
 import './App.css';
 import {Navbar, NavbarBrand} from 'reactstrap';
+import {Cards, Charts, CountryTable } from './components';
 
 class App extends Component {
   render(){
@@ -12,6 +13,9 @@ class App extends Component {
       <NavbarBrand href="/">COVID-19 Dashboard</NavbarBrand>
       </div>
       </Navbar>
+      <Cards />
+      <Charts />
+      <CountryTable />
       </div>
     );
   }
