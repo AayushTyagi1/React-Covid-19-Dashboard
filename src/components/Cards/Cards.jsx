@@ -9,10 +9,6 @@ const Cards = ({data:{confirmed, recovered, deaths, lastUpdate}}) => {
     {
         return 'Loading...';
     }
-    if(!deaths)
-    {
-        return 'Loading';
-    }
     return(
         <div className='row'>
 
@@ -57,7 +53,7 @@ const Cards = ({data:{confirmed, recovered, deaths, lastUpdate}}) => {
                     <CardText>
                         <CountUp
                             start={0}
-                            end={deaths}
+                            end={deaths.value}
                             duration={2}
                             separator=","
                             />
