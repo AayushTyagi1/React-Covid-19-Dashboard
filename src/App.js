@@ -26,6 +26,7 @@ class App extends Component {
       <NavbarBrand href="/">COVID-19 Dashboard</NavbarBrand>
       </div>
       </Navbar>
+      <br />
       <Cards data={data}/>
       <Charts />
       <CountryTable />
