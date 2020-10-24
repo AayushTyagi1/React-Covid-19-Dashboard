@@ -7,11 +7,18 @@ import {fetchData} from './api'
 
 class App extends Component {
 
+  state = {
+    data: {},
+  }
+
   async componentDidMount(){
-    const data = await fetchData();
-    console.log(data);
+    const fetchedData = await fetchData();
+ 
+    this.setState({data: fetchedData})
   }
   render(){
+
+    const {data}=this.state;
     return(
       <div className ='App'>
       <Navbar dark color='dark'>
@@ -19,7 +26,7 @@ class App extends Component {
       <NavbarBrand href="/">COVID-19 Dashboard</NavbarBrand>
       </div>
       </Navbar>
-      <Cards />
+      <Cards data={data}/>
       <Charts />
       <CountryTable />
       </div>
