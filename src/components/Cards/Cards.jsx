@@ -13,7 +13,7 @@ const Cards = ({data:{confirmed, recovered, deaths, lastUpdate}}) => {
         return <Spinner animation="border" />;
     }
     return(
-        <div className='container container-fluid'>
+        <div className='container container-fluid' id="cardContainer">
         <div className="row justify-content-center">
         <Card id="infected" className="col-3">
             <CardBody>

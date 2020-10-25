@@ -1,5 +1,7 @@
-.container {
+#cardContainer {
   margin: 10px, 0;
+  height: 95vh;
+  padding: 50px;
 }
 .Card {
   margin: 0 2% !important;

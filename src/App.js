@@ -1,9 +1,10 @@
 import React,{Component} from 'react';
 import logo from './logo.svg';
-import {Navbar, NavbarBrand} from 'reactstrap';
+import {Navbar, NavbarBrand, NavItem, NavLink} from 'reactstrap';
 import {Cards, Charts, CountryTable } from './components';
 import './App.css';
-import {fetchData} from './api'
+import {fetchData} from './api';
+import {viruscovid} from './images/VirusCovid-19.png';
 
 class App extends Component {
 
@@ -26,7 +27,6 @@ class App extends Component {
       <NavbarBrand href="/">COVID-19 Dashboard</NavbarBrand>
       </div>
       </Navbar>
-      <br />
       <Cards data={data}/>
       <Charts />
       <CountryTable />
