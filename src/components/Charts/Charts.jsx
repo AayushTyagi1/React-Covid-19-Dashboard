@@ -40,8 +40,9 @@ const Charts = () => {
     );
 
     return(
-            <div className="container align-content-center" id='chartContainer'>
-                {lineChart}
+            <div className="container absolute-center" id='chartContainer'>
+                    {lineChart}
+                
             </div>
     )
 }

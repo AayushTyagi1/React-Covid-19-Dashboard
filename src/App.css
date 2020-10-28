@@ -1,5 +1,8 @@
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-flow: column;
 }
 
 .App-logo {
@@ -41,9 +44,17 @@ body {
   background-color: #2f4454;
 }
 
-.container {
+#appcontainer {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+#block1 {
+  margin-bottom: 20px;
+}
+
+#block2 {
+  position: relative top;
+  margin-top: 50px;
 }

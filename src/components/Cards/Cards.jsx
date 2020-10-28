@@ -13,9 +13,9 @@ const Cards = ({data:{confirmed, recovered, deaths, lastUpdate}}) => {
         return <Spinner animation="border" />;
     }
     return(
-        <div className='container container-fluid' id="cardContainer">
+        <div className='container' id="cardContainer">
         <div className="row justify-content-center">
-        <Card id="infected" className="col-3">
+        <Card id="infected" className="col-xs-12 col-sm-3">
             <CardBody>
                     <CardTitle className="h1 font-weight-bolder">Infected</CardTitle>
                     <CardImg width="100%" src={InfectedImg} />
@@ -34,7 +34,7 @@ const Cards = ({data:{confirmed, recovered, deaths, lastUpdate}}) => {
                 </CardBody>
         </Card>
 
-        <Card id="recovered" className="offset-1 col-3">
+        <Card id="recovered" className="col-xs-12 col-sm-3 offset-sm-1">
             <CardBody>
                     <CardTitle className="h1 font-weight-bolder">Recovered</CardTitle>
                     <CardImg width="100%" src={recoveredImg} />
@@ -55,7 +55,7 @@ const Cards = ({data:{confirmed, recovered, deaths, lastUpdate}}) => {
                 </CardBody>
         </Card>
  
-        <Card id="deaths" className="offset-1 col-3">
+        <Card id="deaths" className="col-xs-12 col-sm-3 offset-sm-1">
             <CardBody>
                     <CardTitle className="h1 font-weight-bolder" >Deaths</CardTitle>
                     <CardImg width="100%" src={DeathImg} />

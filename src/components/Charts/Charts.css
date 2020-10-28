@@ -1,4 +1,7 @@
 #chartContainer {
-  height: 90vh;
+  margin: 10px, 0;
+  height: 90%;
   padding-top: 100px;
+  display: flex;
+  flex-direction: column;
 }
