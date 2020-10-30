@@ -11,6 +11,7 @@
     "bootstrap": "^4.5.3",
     "chart.js": "^2.9.4",
     "classnames": "^2.2.6",
+    "ml5": "^0.5.0",
     "react": "^17.0.1",
     "react-chartjs-2": "^2.10.0",
     "react-countup": "^4.3.3",
