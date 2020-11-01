@@ -28,8 +28,9 @@ class App extends Component {
       </div>
       </Navbar>
       <Cards data={data}/>
-      <Charts />
       <CountryTable />
+
+      <Charts />
       </div>
     );
   }
