@@ -20,12 +20,11 @@ class App extends Component {
   }
   handleCountryChange = async (country) =>{
     const fetchedData = await fetchData(country);
-    console.log(fetchedData);
-
+    this.setState({data: fetchedData, country:country});
   }
   render(){
 
-    const {data}=this.state;
+    const {data, country}=this.state;
     return(
       <div className ='App'>
       <Navbar dark color='dark'>
@@ -35,8 +34,7 @@ class App extends Component {
       </Navbar>
       <Cards data={data}/>
       <CountryTable handleCountryChange={this.handleCountryChange}/>
-
-      <Charts />
+      <Charts data={data} country={country}/>
       </div>
     );
   }
