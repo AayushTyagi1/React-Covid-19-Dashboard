@@ -1,0 +1,83 @@
+.menu {
+  white-space: nowrap;
+  background-color: #1995ad;
+}
+
+.menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 50% 0;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.menu ul li {
+  -webkit-transition: background-color 2s ease-in;
+  transition: background-color 2s ease-in;
+}
+
+.menu ul li a {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: white;
+  text-decoration: none;
+}
+
+.menu ul li :hover {
+  color: #3a6d9c;
+  background-color: white;
+}
+
+@media (min-heighy: 300px) {
+  .menu ul {
+    padding: 0;
+  }
+}
+
+main {
+  padding-bottom: 4rem;
+  color: white;
+}
+
+main section {
+  padding: 2rem 3rem;
+  margin: 0 0 1rem 0;
+}
+
+main section h1 {
+  font-size: calc(1.2rem + 1.3vw);
+}
+
+.accordion {
+  background-color: #a1d6e2;
+  color: #1995ad;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  font-size: calc(0.65rem + 0.75vw);
+  border: none;
+  outline: none;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.active,
+.accordion:hover {
+  background-color: #1995ad;
+  color: white;
+}
+
+.panel {
+  margin: 0 auto;
+  padding: 0 18px;
+  -webkit-transition: max-height 0.2s;
+  transition: max-height 0.2s;
+  background-color: #799b9c;
+}
+
+.panel p {
+  font-size: calc(0.5rem + 0.6vw);
+  font-weight: lighter;
+}
