@@ -1,10 +1,10 @@
 import React,{useState, useEffect} from 'react';
 import { NativeSelect, FormControl} from '@material-ui/core';
-  import './CountryTable.module.css'
+  import './CountrySelector.module.css'
   import { fetchCountries } from '../../api'
   
 
-const CountryTable = ({ handleCountryChange}) => {
+const CountrySelector = ({ handleCountryChange}) => {
     const [fetchedCountries, setFetchedCountries ] =  useState([]);
     useEffect(
         () =>{
@@ -23,4 +23,4 @@ const CountryTable = ({ handleCountryChange}) => {
         </FormControl>
     )
 }
-export default CountryTable;
+export default CountrySelector;
