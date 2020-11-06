@@ -1,7 +1,7 @@
 import React,{Component} from 'react';
 import logo from './logo.svg';
 import {Cards, Charts, CountrySelector } from './components';
-import './App.css';
+import './Home.css';
 import {fetchData} from './api';
 import {viruscovid} from './images/VirusCovid-19.png';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';

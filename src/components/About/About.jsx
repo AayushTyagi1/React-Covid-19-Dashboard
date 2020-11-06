@@ -1,12 +1,9 @@
 import React, {Component, useState} from 'react';
-import { UncontrolledCollapse,Collapse, Button, CardBody, Card } from 'reactstrap';
-
+import {Collapse, Button, CardBody, Card } from 'reactstrap';
+import Collapsible from 'react-collapsible';
 import "./About.css";
 
-const About = (props) =>{
-    const [isOpen, setIsOpen] = useState(false);
-
-    const toggle = () => setIsOpen(!isOpen);
+const About = () =>{
     return(
         <div>
         <div className="jumbotron">
@@ -14,7 +11,7 @@ const About = (props) =>{
       <h2>Informative </h2>
         </div>
         <div>
-            <div className="row">
+            <div className="row p-0">
                 <div className="col-xs-12 col-sm-3">
                 <nav class="menu">
                     <ul>
@@ -48,12 +45,12 @@ const About = (props) =>{
         <h1>How does it spread?</h1>
         <article>
           <p>
-            People can catch COVID-19 from others who have the virus. The disease can spread from person to person
-            through small droplets from the nose or mouth which are spread when a person with COVID-19 coughs or
-            exhales. These droplets land on objects and surfaces around the person. Other people then catch COVID-19 by
-            touching these objects or surfaces, then touching their eyes, nose or mouth. People can also catch COVID-19
-            if they breathe in droplets from a person with COVID-19 who coughs out or exhales droplets. This is why it
-            is important to stay more than 1 meter (3 feet) away from a person who is sick.
+          COVID-19 spreads easily from person to person, mainly by the following routes:
+            <li> Between people who are in close contact with one another (within 6 feet).</li>
+            <li> Through respiratory droplets produced when an infected person coughs, sneezes, breathes, sings or talks.</li>
+            <li>Respiratory droplets cause infection when they are inhaled or deposited on mucous membranes, such as those that line
+                the inside of the nose and mouth.</li>
+                <li>People who are infected but do not have symptoms can also spread the virus to others.</li>
           </p>
         </article>
       </section>
@@ -63,16 +60,20 @@ const About = (props) =>{
         <article>
           <p>
             The most common symptoms of COVID-19 are fever, tiredness, and dry cough. Some patients may have aches and
-            pains, nasal congestion, runny nose, sore throat or diarrhea. These symptoms are usually mild and begin
-            gradually. Some people become infected but don’t develop any symptoms and don't feel unwell. Most people
-            (about 80%) recover from the disease without needing special treatment. Around 1 out of every 6 people who
-            gets COVID-19 becomes seriously ill and develops difficulty breathing. Older people, and those with
-            underlying medical problems like high blood pressure, heart problems or diabetes, are more likely to develop
-            serious illness. People with fever, cough and difficulty breathing should seek medical attention.
+            pains, nasal congestion, runny nose, sore throat or diarrhea. 
+            The most common symptoms of COVID-19 are
+           <li>	Fever</li>
+           <li>	Cough</li>
+           <li>	Headaches</li>
+           <li>	Fatigue</li>
+           <li>	Muscle or body aches</li>
+           <li>	Loss of taste or smell</li>
+           <li>	Sore throat</li>
+           <li>	Nausea</li>
+           <li>	Diarrhea</li>
+          Other symptoms are signs of serious illness. If someone has trouble breathing, chest pain or pressure, or difficulty staying awake,
+           get medical care immediately.
 
-            While we are still learning about how COVID-2019 affects people, older persons and persons with pre-existing
-            medical conditions (such as high blood pressure, heart disease, lung disease, cancer or diabetes) appear to
-            develop serious illness more often than others.
           </p>
         </article>
       </section>
@@ -82,10 +83,10 @@ const About = (props) =>{
         <article>
           <ul id="taking-care">
             <li>
-              Regularly and thoroughly clean your hands with an alcohol-based hand rub or wash them with soap and water.
+            Wash your hands with soap and water for 20 seconds or use hand sanitizer with at least 60% alcohol.
             </li>
             <li>
-              Maintain at least 1 metre (3 feet) distance between yourself and anyone who is coughing or sneezing.
+            Stay at least 6 feet (about two arm lengths) from others who don’t live with you, particularly in crowded areas.
             </li>
             <li>Avoid touching eyes, nose and mouth.</li>
             <li>
@@ -100,159 +101,96 @@ const About = (props) =>{
           </ul>
         </article>
       </section>
+      
+
 
       <section id="faq">
         <h1>Questions & Answers</h1>
         <hr />
         <article>
-        <Button id="1" className="accordion" onClick={toggle} style={{ marginBottom: '1rem' }}>How does the virus spread?</Button>
-      <Collapse isOpen={isOpen}>
+      <Collapsible trigger={<span><Button id="1" className="accordion"  style={{ marginBottom: '1rem' }}>How does the virus spread?</Button></span>}>
         <Card>
           <CardBody className="panel">
-                  <ul>The virus that causes COVID-19 most commonly spreads between people who are in close contact with one another (within about 6 feet, or 2 arm lengths).
+                  <li>The virus that causes COVID-19 most commonly spreads between people who are in close contact with one another (within about 6 feet, or 2 arm lengths).
                   It spreads through respiratory droplets or small particles, such as those in aerosols, produced when an infected person coughs, sneezes, sings, talks, or breathes.
-                  </ul>
-                  <ul>These particles can be inhaled into the nose, mouth, airways, and lungs and cause infection. This is thought to be the main way the virus spreads.
+                  </li>
+                  <li>These particles can be inhaled into the nose, mouth, airways, and lungs and cause infection. This is thought to be the main way the virus spreads.
                    Droplets can also land on surfaces and objects and be transferred by touch. A person may get COVID-19 by touching the surface or object that has the
-                    virus on it and then touching their own mouth, nose, or eyes. Spread from touching surfaces is not thought to be the main way the virus spreads.</ul>
-                    <ul>It is possible that COVID-19 may spread through the droplets and airborne particles that are formed when a person who has COVID-19 coughs, sneezes,
+                    virus on it and then touching their own mouth, nose, or eyes. Spread from touching surfaces is not thought to be the main way the virus spreads.</li>
+                    <li>It is possible that COVID-19 may spread through the droplets and airborne particles that are formed when a person who has COVID-19 coughs, sneezes,
                          sings, talks, or breathes. There is growing evidence that droplets and airborne particles can remain suspended in the air and be breathed in by 
                          others, and travel distances beyond 6 feet (for example, during choir practice, in restaurants, or in fitness classes). In general, indoor 
-                         environments without good ventilation increase this risk.</ul>
-                    <ul>COVID-19 seems to be spreading easily and sustainably in the community (“community spread”) in many affected geographic areas. Community spread means 
-                        people have been infected with the virus in an area, including some who are not sure how or where they became infected.</ul>
+                         environments without good ventilation increase this risk.</li>
+                    <li>COVID-19 seems to be spreading easily and sustainably in the community (“community spread”) in many affected geographic areas. Community spread means 
+                        people have been infected with the virus in an area, including some who are not sure how or where they became infected.</li>
           </CardBody>
         </Card>
-      </Collapse>
+      </Collapsible>
 
-      <Button id="2" className="accordion" onClick={toggle} style={{ marginBottom: '1rem' }}>How likely am I to catch COVID-19?</Button>
-      <Collapse isOpen={isOpen}>
+      <Collapsible trigger={<span><Button id="1" className="accordion"  style={{ marginBottom: '1rem' }}>How likely am I to catch COVID-19?</Button></span>}>
         <Card>
           <CardBody className="panel">
-          The risk depends on where you are - and more specifically, whether there is a COVID-19 outbreak unfolding
-              there.
+              <li>The risk depends on where you are - and more specifically, whether there is a COVID-19 outbreak unfolding
+              there.</li>
 
-              For most people in most locations the risk of catching COVID-19 is still low. However, there are now
+              <li>For most people in most locations the risk of catching COVID-19 is still low. However, there are now
               places around the world (cities or areas) where the disease is spreading. For people living in, or
               visiting, these areas the risk of catching COVID-19 is higher. Governments and health authorities are
               taking vigorous action every time a new case of COVID-19 is identified. Be sure to comply with any local
               restrictions on travel, movement or large gatherings. Cooperating with disease control efforts will reduce
-              your risk of catching or spreading COVID-19.
+              your risk of catching or spreading COVID-19.</li>
 
-              COVID-19 outbreaks can be contained and transmission stopped, as has been shown in China and some other
+              <li>COVID-19 outbreaks can be contained and transmission stopped, as has been shown in China and some other
               countries. Unfortunately, new outbreaks can emerge rapidly. It’s important to be aware of the situation
-              where you are or intend to go.
+              where you are or intend to go.</li>
           </CardBody>
         </Card>
-      </Collapse>
-
-      <Button className="accordion" onClick={toggle} style={{ marginBottom: '1rem' }}>How likely am I to catch COVID-19?</Button>
-      <Collapse isOpen={isOpen}>
+      </Collapsible>
+      <Collapsible trigger={<span><Button id="1" className="accordion"  style={{ marginBottom: '1rem' }}>What to Do If You're Sick?</Button></span>}>
         <Card>
           <CardBody className="panel">
-          The risk depends on where you are - and more specifically, whether there is a COVID-19 outbreak unfolding
-              there.
+              <li>Stay home except to get medical care. Most people with COVID-19 have mild 
+                illness and recover at home without medical care.</li>
 
-              For most people in most locations the risk of catching COVID-19 is still low. However, there are now
-              places around the world (cities or areas) where the disease is spreading. For people living in, or
-              visiting, these areas the risk of catching COVID-19 is higher. Governments and health authorities are
-              taking vigorous action every time a new case of COVID-19 is identified. Be sure to comply with any local
-              restrictions on travel, movement or large gatherings. Cooperating with disease control efforts will reduce
-              your risk of catching or spreading COVID-19.
+              <li>Isolate yourself from other members of your family to prevent spread to them and the people that they may have contact with, like grandparents.
+                  If you have to leave isolation, wear a mask, stay 6 feet apart from others, wash your hands frequently, and clean all touched surfaces.</li>
 
-              COVID-19 outbreaks can be contained and transmission stopped, as has been shown in China and some other
-              countries. Unfortunately, new outbreaks can emerge rapidly. It’s important to be aware of the situation
-              where you are or intend to go.
+              <li>Even if you don’t feel sick, you can spread COVID-19 to others.
+                 Be sure that you protect everyone as though they are the most fragile person in your family.</li>
+                 <li>
+                 Get care immediately if you are having emergency warning signs, 
+                 like trouble breathing, pain or pressure in chest.
+                 </li>
           </CardBody>
         </Card>
-      </Collapse>
-
-      <Button className="accordion" onClick={toggle} style={{ marginBottom: '1rem' }}>How likely am I to catch COVID-19?</Button>
-      <Collapse isOpen={isOpen}>
+      </Collapsible>
+      <Collapsible trigger={<span><Button id="1" className="accordion"  style={{ marginBottom: '1rem' }}>How to Get a Test for Current Infection?</Button></span>}>
         <Card>
           <CardBody className="panel">
-          The risk depends on where you are - and more specifically, whether there is a COVID-19 outbreak unfolding
-              there.
-
-              For most people in most locations the risk of catching COVID-19 is still low. However, there are now
-              places around the world (cities or areas) where the disease is spreading. For people living in, or
-              visiting, these areas the risk of catching COVID-19 is higher. Governments and health authorities are
-              taking vigorous action every time a new case of COVID-19 is identified. Be sure to comply with any local
-              restrictions on travel, movement or large gatherings. Cooperating with disease control efforts will reduce
-              your risk of catching or spreading COVID-19.
-
-              COVID-19 outbreaks can be contained and transmission stopped, as has been shown in China and some other
-              countries. Unfortunately, new outbreaks can emerge rapidly. It’s important to be aware of the situation
-              where you are or intend to go.
+              <li>You can visit your state or local health department’s website to look for the latest local information on testing.A viral test checks samples to find out if you are currently infected with COVID-19.
+                The time it takes to process these tests can vary.</li>
+              <li>If you have symptoms of COVID-19 and want to get tested, call your healthcare provider first.</li>
+              <li>If you have symptoms of COVID-19 and choose to not get tested, it is important to stay home.</li>
           </CardBody>
         </Card>
-      </Collapse>
-
-      <Button className="accordion" onClick={toggle} style={{ marginBottom: '1rem' }}>How likely am I to catch COVID-19?</Button>
-      <Collapse isOpen={isOpen}>
+      </Collapsible>
+      <Collapsible trigger={<span><Button id="1" className="accordion"  style={{ marginBottom: '1rem' }}>How to Cope with Stress?</Button></span>}>
         <Card>
           <CardBody className="panel">
-          The risk depends on where you are - and more specifically, whether there is a COVID-19 outbreak unfolding
-              there.
+              <li>Taking care of your friends and your family can be a stress reliever, but it should be balanced with care for yourself. 
+                Helping others cope with their stress, such as by providing social support, can also make your community stronger. </li>
 
-              For most people in most locations the risk of catching COVID-19 is still low. However, there are now
-              places around the world (cities or areas) where the disease is spreading. For people living in, or
-              visiting, these areas the risk of catching COVID-19 is higher. Governments and health authorities are
-              taking vigorous action every time a new case of COVID-19 is identified. Be sure to comply with any local
-              restrictions on travel, movement or large gatherings. Cooperating with disease control efforts will reduce
-              your risk of catching or spreading COVID-19.
+              <li>Unwind by doing yoga, listening to music, or gardening.</li>
 
-              COVID-19 outbreaks can be contained and transmission stopped, as has been shown in China and some other
-              countries. Unfortunately, new outbreaks can emerge rapidly. It’s important to be aware of the situation
-              where you are or intend to go.
+              <li>Find new ways to connect with family and friends, get support, and share feelings.</li>
+                 <li>
+                 Eat healthy foods and get enough rest</li>
+                <li>Relax by reading, listening to music, or starting a new hobby.
+                 </li>
           </CardBody>
         </Card>
-      </Collapse>
-      
-      <Button className="accordion" onClick={toggle} style={{ marginBottom: '1rem' }}>How likely am I to catch COVID-19?</Button>
-      <Collapse isOpen={isOpen}>
-        <Card>
-          <CardBody className="panel">
-          The risk depends on where you are - and more specifically, whether there is a COVID-19 outbreak unfolding
-              there.
+      </Collapsible>
 
-              For most people in most locations the risk of catching COVID-19 is still low. However, there are now
-              places around the world (cities or areas) where the disease is spreading. For people living in, or
-              visiting, these areas the risk of catching COVID-19 is higher. Governments and health authorities are
-              taking vigorous action every time a new case of COVID-19 is identified. Be sure to comply with any local
-              restrictions on travel, movement or large gatherings. Cooperating with disease control efforts will reduce
-              your risk of catching or spreading COVID-19.
-
-              COVID-19 outbreaks can be contained and transmission stopped, as has been shown in China and some other
-              countries. Unfortunately, new outbreaks can emerge rapidly. It’s important to be aware of the situation
-              where you are or intend to go.
-          </CardBody>
-        </Card>
-        </Collapse>
-        <Button color="primary" id="toggler" style={{ marginBottom: '1rem' }}>
-      Toggle
-    </Button>
-    <UncontrolledCollapse toggler="#toggler">
-      <Card>
-        <CardBody>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt magni, voluptas debitis
-          similique porro a molestias consequuntur earum odio officiis natus, amet hic, iste sed
-          dignissimos esse fuga! Minus, alias.
-        </CardBody>
-      </Card>
-    </UncontrolledCollapse>
-    <Button color="primary" id="toggler" style={{ marginBottom: '1rem' }}>
-      Toggle
-    </Button>
-    <UncontrolledCollapse toggler="#toggler">
-      <Card>
-        <CardBody>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt magni, voluptas debitis
-          similique porro a molestias consequuntur earum odio officiis natus, amet hic, iste sed
-          dignissimos esse fuga! Minus, alias.
-        </CardBody>
-      </Card>
-    </UncontrolledCollapse>
     
 
         </article>
