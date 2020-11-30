@@ -15,10 +15,12 @@ const Cards = ({data:{confirmed, recovered, deaths, lastUpdate}}) => {
     return(
         <div className='container' id="cardContainer">
         <div className="row justify-content-center">
-        <Card id="infected" className="col-xs-12 col-sm-3">
+        <Card id="infected" className="col-xs-12 col-sm-3" height="auto">
             <CardBody>
                     <CardTitle className="h1 font-weight-bolder">Infected</CardTitle>
-                    <CardImg width="100%" src={InfectedImg} />
+                    <div className="d-none d-sm-block">
+                    <CardImg src={InfectedImg} />
+                    </div>
                     <CardText >
                         <big><b>
                         <CountUp
@@ -30,14 +32,16 @@ const Cards = ({data:{confirmed, recovered, deaths, lastUpdate}}) => {
                            </b> </big>
                     </CardText>
                    <CardText className="font-italic">{new Date(lastUpdate).toDateString()}</CardText>
-                    <CardText>Number of active cases of COVID-19</CardText>
+                   <div className="d-none d-sm-block">
+                    <CardText>Number of active cases of COVID-19</CardText></div>
                 </CardBody>
         </Card>
 
-        <Card id="recovered" className="col-xs-12 col-sm-3 offset-sm-1">
+        <Card id="recovered" className="col-xs-12 col-sm-3 offset-sm-1" height="auto">
             <CardBody>
                     <CardTitle className="h1 font-weight-bolder">Recovered</CardTitle>
-                    <CardImg width="100%" src={recoveredImg} />
+                    <div className="d-none d-sm-block">
+                    <CardImg src={recoveredImg} /></div>
                     
                     <CardText>
                     <big><b>
@@ -51,14 +55,16 @@ const Cards = ({data:{confirmed, recovered, deaths, lastUpdate}}) => {
                     </CardText>
                     
                    <CardText className="font-italic">{new Date(lastUpdate).toDateString()}</CardText>
-                    <CardText>Number of recoveries from COVID-19</CardText>
+                   <div className="d-none d-sm-block">
+                    <CardText>Number of recoveries from COVID-19</CardText></div>
                 </CardBody>
         </Card>
  
-        <Card id="deaths" className="col-xs-12 col-sm-3 offset-sm-1">
+        <Card id="deaths" className="col-xs-12 col-sm-3 offset-sm-1" height="auto">
             <CardBody>
                     <CardTitle className="h1 font-weight-bolder" >Deaths</CardTitle>
-                    <CardImg width="100%" src={DeathImg} />
+                    <div className="d-none d-sm-block">
+                    <CardImg width="100%" src={DeathImg} /></div>
                     
                     <CardText>
                     <big><b>
@@ -72,7 +78,8 @@ const Cards = ({data:{confirmed, recovered, deaths, lastUpdate}}) => {
                     </CardText>
                     
                    <CardText className="font-italic">{new Date(lastUpdate).toDateString()}</CardText>
-                    <CardText>Number of deaths from COVID-19</CardText>
+                   <div className="d-none d-sm-block">
+                    <CardText>Number of deaths from COVID-19</CardText></div>
                 </CardBody>
         </Card>
         </div>

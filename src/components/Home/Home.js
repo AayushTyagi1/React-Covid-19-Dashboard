@@ -2,7 +2,8 @@ import React,{Component} from 'react';
 import {Cards, Charts, CountrySelector } from '../../components';
 import './Home.css';
 import {fetchData} from '../../api';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { Container, Row, Col} from 'reactstrap'
+
 
 class Home extends Component {
 

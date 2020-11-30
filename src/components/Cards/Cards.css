@@ -21,3 +21,7 @@
   flex: 1;
   padding: 16px;
 }
+
+.h1 {
+  font-size: calc(50% + 1vw + 1vh);
+}
