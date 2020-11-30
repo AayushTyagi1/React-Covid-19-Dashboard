@@ -2,9 +2,9 @@ import React, {Component} from 'react';
 import {Card, CardImg, CardImgOverlay, CardText, CardBody,CardTitle,Spinner} from 'reactstrap';
 
 import './Cards.css';
-import recoveredImg from './images/recovered.png';
-import DeathImg from './images/deaths.png';
-import InfectedImg from './images/infected.jpg';
+import recoveredImg from '../images/recovered.png';
+import DeathImg from '../images/deaths.png';
+import InfectedImg from '../images/infected.jpg';
 import CountUp from 'react-countup';
 
 const Cards = ({data:{confirmed, recovered, deaths, lastUpdate}}) => {

@@ -2,7 +2,7 @@ import React,{Component} from 'react';
 import {Navbar, NavbarBrand, NavItem, NavLink} from 'reactstrap';
 import './App.css';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import Home from './Home';
+import Home from './components/Home/Home';
 import About from './components/About/About'
 import Navigation from './components/Navigation/Navigation';
 
