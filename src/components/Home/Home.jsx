@@ -1,5 +1,5 @@
 import React,{Component} from 'react';
-import {Cards, Charts, CountrySelector } from '../../components';
+import {Cards, Charts, CountrySelector } from '..';
 import './Home.css';
 import {fetchData} from '../../api';
 import { Container, Row, Col} from 'reactstrap'
@@ -27,7 +27,9 @@ class Home extends Component {
     return(
       <div className ='Home'>
       <Cards data={data}/>
+      <div>
       <CountrySelector handleCountryChange={this.handleCountryChange}/>
+      </div>
       <Charts data={data} country={country}/>
       </div>
     );

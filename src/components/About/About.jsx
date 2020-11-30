@@ -2,13 +2,19 @@ import React, {Component, useState} from 'react';
 import {Collapse, Button, CardBody, Card } from 'reactstrap';
 import Collapsible from 'react-collapsible';
 import "./About.css";
+import covidImg from "../images/VirusCovid.png"
 
 const About = () =>{
     return(
         <div>
-        <div className="jumbotron">
+        <div className="jumbotron row jumbotron-fluid">
+          <div className="col-4">
       <h1>Covid-19</h1>
       <h2>Informative </h2>
+      </div>
+      <div className="col-7 flex-auto">
+      <img id ="covidImg" src={covidImg} alt ="covid" className="rounded float-right  mx-auto" />
+      </div>
         </div>
         <div>
             <div className="row p-0">

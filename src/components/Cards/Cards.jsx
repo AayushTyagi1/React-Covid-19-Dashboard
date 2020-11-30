@@ -32,7 +32,7 @@ const Cards = ({data:{confirmed, recovered, deaths, lastUpdate}}) => {
                            </b> </big>
                     </CardText>
                    <CardText className="font-italic">{new Date(lastUpdate).toDateString()}</CardText>
-                   <div className="d-none d-sm-block">
+                   <div className="d-none d-lg-block">
                     <CardText>Number of active cases of COVID-19</CardText></div>
                 </CardBody>
         </Card>
@@ -55,7 +55,7 @@ const Cards = ({data:{confirmed, recovered, deaths, lastUpdate}}) => {
                     </CardText>
                     
                    <CardText className="font-italic">{new Date(lastUpdate).toDateString()}</CardText>
-                   <div className="d-none d-sm-block">
+                   <div className="d-none d-lg-block">
                     <CardText>Number of recoveries from COVID-19</CardText></div>
                 </CardBody>
         </Card>
@@ -78,7 +78,7 @@ const Cards = ({data:{confirmed, recovered, deaths, lastUpdate}}) => {
                     </CardText>
                     
                    <CardText className="font-italic">{new Date(lastUpdate).toDateString()}</CardText>
-                   <div className="d-none d-sm-block">
+                   <div className="d-none d-lg-block">
                     <CardText>Number of deaths from COVID-19</CardText></div>
                 </CardBody>
         </Card>

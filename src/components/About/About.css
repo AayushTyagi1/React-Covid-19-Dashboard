@@ -81,3 +81,8 @@ main section h1 {
   font-size: calc(0.5rem + 0.6vw);
   font-weight: lighter;
 }
+
+#covidImg {
+  width: 10%;
+  height: auto;
+}
