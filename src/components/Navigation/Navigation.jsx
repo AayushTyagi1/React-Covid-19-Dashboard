@@ -6,7 +6,7 @@ import "./Navigation.css";
 const Navigation = () => {
     return (
        <nav>
-          <NavLink to="/ " exact ClassName="navbar-light" to="/">Home </NavLink>
+          <NavLink to="/" exact className="navbar-light">Home </NavLink>
           <NavLink to="/about" className="navbar-light"> About</NavLink>
        </nav>
        

@@ -1,5 +1,5 @@
 import React,{Component} from 'react';
-import {Navbar, NavbarBrand, NavItem, NavLink} from 'reactstrap';
+import {Navbar, NavbarBrand} from 'reactstrap';
 import './App.css';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Home from './components/Home/Home';
@@ -13,7 +13,7 @@ class App extends Component {
     return(
       <BrowserRouter>
       <div>
-      <Navbar dark color='dark'>
+      <Navbar dark color='dark' background-color="black">
       <div className='container' id="appcontainer">
       <NavbarBrand href="/">COVID-19 Dashboard</NavbarBrand>
       </div>

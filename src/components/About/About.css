@@ -86,3 +86,9 @@ main section h1 {
   width: 10%;
   height: auto;
 }
+
+.jumbotron {
+  background-image: url(../images/background.png);
+  background-size: cover;
+  height: 100%;
+}

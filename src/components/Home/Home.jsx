@@ -2,7 +2,7 @@ import React,{Component} from 'react';
 import {Cards, Charts, CountrySelector } from '..';
 import './Home.css';
 import {fetchData} from '../../api';
-import { Container, Row, Col} from 'reactstrap'
+
 
 
 class Home extends Component {
@@ -26,14 +26,15 @@ class Home extends Component {
     const {data, country}=this.state;
     return(
       <div className ='Home'>
-      <Cards data={data}/>
       <div>
       <CountrySelector handleCountryChange={this.handleCountryChange}/>
       </div>
+      <Cards data={data}/>
+ 
       <Charts data={data} country={country}/>
       <footer>
       <div className="App-footer">
-          <div className=" align-content offset-xs-0 offset-md-5 offset-lg-10 text-white-50">
+          <div className=" align-content offset-xs-0 offset-md-8 offset-lg-10 text-white-50">
                Created By:<br/>
               <a href="https://aayushtyagiresume.000webhostapp.com/" target="_blank">Aayush Tyagi</a><br/>
               <a href="https://www.linkedin.com/in/aayush-tyagi-32a527190/" target="_blank">LinkedIn</a><br/>
