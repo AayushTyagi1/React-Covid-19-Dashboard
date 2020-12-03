@@ -1,5 +1,5 @@
-import React, {Component, useState} from 'react';
-import {Collapse, Button, CardBody, Card } from 'reactstrap';
+import React from 'react';
+import { Button, CardBody, Card } from 'reactstrap';
 import Collapsible from 'react-collapsible';
 import "./About.css";
 import covidImg from "../images/VirusCovid.png"

@@ -7,7 +7,9 @@ const Navigation = () => {
     return (
        <nav>
           <NavLink to="/" exact className="navbar-light">Home </NavLink>
+          <NavLink to="/mapView" className="navbar-light">Map</NavLink>
           <NavLink to="/about" className="navbar-light"> About</NavLink>
+          
        </nav>
        
     );

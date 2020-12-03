@@ -1,5 +1,5 @@
 import React,{Component} from 'react';
-import {Cards, Charts, CountrySelector, InfoTable } from '..';
+import {Cards, Charts, CountrySelector, InfoTable,mapView } from '..';
 import { TinyButton  } from "react-scroll-up-button";
 import './Home.css';
 import {fetchData} from '../../api';
@@ -31,6 +31,7 @@ class Home extends Component {
       <div>
       <CountrySelector handleCountryChange={this.handleCountryChange}/>
       </div>
+      <mapView />
       <Cards data={data}/>
  
       <Charts data={data} country={country}/>
