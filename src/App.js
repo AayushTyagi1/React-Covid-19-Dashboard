@@ -3,7 +3,8 @@ import {Navbar, NavbarBrand} from 'reactstrap';
 import './App.css';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Home from './components/Home/Home';
-import About from './components/About/About'
+import About from './components/About/About';
+import GlobalMap from './components/GlobalMap/GlobalMap';
 import Navigation from './components/Navigation/Navigation';
 
 class App extends Component {
@@ -23,6 +24,7 @@ class App extends Component {
       <Switch>
            <Route path="/" component={Home} exact/>
            <Route path="/about" component={About}/>
+           <Route path="/GlobalMap" component={GlobalMap}/>
          </Switch>
     </BrowserRouter>
     );
