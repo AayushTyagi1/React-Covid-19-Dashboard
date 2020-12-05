@@ -1,5 +1,5 @@
-import React, {Component} from 'react';
-import {Card, CardImg, CardImgOverlay, CardText, CardBody,CardTitle,Spinner} from 'reactstrap';
+import React from 'react';
+import {Card, CardImg, CardText, CardBody,CardTitle,Spinner} from 'reactstrap';
 
 import './Cards.css';
 import recoveredImg from '../images/recovered.png';
