@@ -1,19 +1,24 @@
 import React from 'react';
-import {Navbar, NavbarBrand} from 'reactstrap';
-import { NavLink } from 'react-router-dom';
+import {Navbar, NavbarBrand, NavItem, Nav} from 'reactstrap';
+import {NavLink} from 'react-router-dom'
 import "./Navigation.css";
+import GithubCorner from '../GithubCorner/GithubCorner'
  
 const Navigation = () => {
     return (
-      <Navbar dark color='dark' background-color="black">
+      <Navbar dark color='dark' className="p-0">
       <div  id="appcontainer">
       <NavbarBrand href="/">COVID-19 Dashboard</NavbarBrand>
       </div>
-      <nav>
-          <NavLink to="/" exact className="navbar-light">Home </NavLink>
-          <NavLink to="/GlobalMap" className="navbar-light">Map </NavLink>
-          <NavLink to="/about" className="navbar-light">About</NavLink>
-          </nav>
+      
+          <Nav>
+        <NavItem className='p-2'>
+          <NavLink to="/" exact className="navbar-light">Home </NavLink></NavItem>
+          <NavItem className='p-2'><NavLink to="/GlobalMap" className="navbar-light">Map  </NavLink></NavItem>
+          <NavItem className='p-2'><NavLink to="/about" className="navbar-light">About</NavLink>
+        </NavItem>
+              <GithubCorner/>
+          </Nav>
        </Navbar>
        
     );

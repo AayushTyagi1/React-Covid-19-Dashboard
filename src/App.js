@@ -5,8 +5,7 @@ import Home from './components/Home/Home';
 import About from './components/About/About';
 import GlobalMap from './components/GlobalMap/GlobalMap';
 import Navigation from './components/Navigation/Navigation';
-import Dark from './components/Dark/Dark'
-import { dark } from '@material-ui/core/styles/createPalette';
+import Dark from './components/Dark/Dark';
 
 class App extends Component {
 
