@@ -1,5 +1,5 @@
 import React,{Component} from 'react';
-import {Cards, Charts, CountrySelector, InfoTable } from '..';
+import {Cards, Charts, CountrySelector} from '..';
 import { TinyButton  } from "react-scroll-up-button";
 import './Home.css';
 import {fetchData} from '../../api';

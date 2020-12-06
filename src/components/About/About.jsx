@@ -7,8 +7,8 @@ import covidImg from "../images/VirusCovid.png"
 const About = () =>{
     return(
         <div>
-        <div className="jumbotron row jumbotron-fluid">
-          <div className="col-4">
+        <div className="jumbotron row jumbotron-fluid text-white">
+          <div className="col-4 ">
       <h1>Covid-19</h1>
       <h2>Informative </h2>
       </div>

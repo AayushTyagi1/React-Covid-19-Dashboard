@@ -13,3 +13,4 @@ const GlobalMap = () => {
     )
 }
 export default GlobalMap;
+

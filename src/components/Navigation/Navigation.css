@@ -5,3 +5,9 @@
 .active {
   color: rgb(93, 192, 231);
 }
+#appcontainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
