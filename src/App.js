@@ -13,11 +13,7 @@ class App extends Component {
 
     return(
       <BrowserRouter>
-      <div>
-      <Navbar dark color='dark' background-color="black">
-      <div className='container' id="appcontainer">
-      <NavbarBrand href="/">COVID-19 Dashboard</NavbarBrand>
-      </div>
+
       <Navigation />
       </Navbar>
       </div> 
