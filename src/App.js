@@ -1,7 +1,7 @@
 import React,{Component} from 'react';
 import './App.css';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import {Home, About, GlobalMap, Navigation, Dark} from './components'
+import {Home, About, GlobalMap, Navigation, Dark,Footer} from './components'
 
 import { TinyButton  } from "react-scroll-up-button";
 
@@ -24,6 +24,7 @@ class App extends Component {
            <Route path="/GlobalMap" component={GlobalMap}/>
          </Switch>
          <TinyButton />
+         <Footer/>
     </BrowserRouter>
     );
   }
