@@ -1,6 +1,6 @@
 import React,{Component} from 'react';
 import {Cards, Charts, CountrySelector} from '..';
-import { TinyButton  } from "react-scroll-up-button";
+
 import './Home.css';
 import {fetchData} from '../../api';
 
@@ -39,10 +39,11 @@ class Home extends Component {
               <a href="https://www.linkedin.com/in/aayush-tyagi-32a527190/" target="_blank">LinkedIn</a><br/>
               <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJTJFkzRjNxWClCGHDCxlTtDrwKXdKXDVwLHfxxpLdVhzrHmrQqkVjhMkpcQgzNcfMrqcBB" target="_blank">Mail</a><br/>
               <a href="https://github.com/mathdroid/covid-19-api" target="_blank">Data Source</a><br/>
+            <p>© Copyright 2020 COVID-19 Dashboard</p>
           </div>
           </div>
       </footer>
-      <TinyButton />
+
       </div>
     );
   }

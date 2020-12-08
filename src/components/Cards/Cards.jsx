@@ -15,7 +15,7 @@ const Cards = ({data:{confirmed, recovered, deaths, lastUpdate}}) => {
     return(
         <div className='container' id="cardContainer">
         <div className="row justify-content-center">
-        <Card id="infected" className="col-xs-12 col-sm-3" height="auto">
+        <Card id="infected" className="col-xs-12 col-sm-3 changedark" height="auto">
             <CardBody>
                     <CardTitle className="h1 font-weight-bolder">Infected</CardTitle>
                     <div className="d-none d-sm-block">

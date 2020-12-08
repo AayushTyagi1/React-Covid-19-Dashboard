@@ -6,6 +6,7 @@ import About from './components/About/About';
 import GlobalMap from './components/GlobalMap/GlobalMap';
 import Navigation from './components/Navigation/Navigation';
 import Dark from './components/Dark/Dark';
+import { TinyButton  } from "react-scroll-up-button";
 
 class App extends Component {
 
@@ -25,6 +26,7 @@ class App extends Component {
            <Route path="/about" component={About}/>
            <Route path="/GlobalMap" component={GlobalMap}/>
          </Switch>
+         <TinyButton />
     </BrowserRouter>
     );
   }
