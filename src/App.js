@@ -16,7 +16,9 @@ class App extends Component {
       <div>
       <Navigation />
       </div> 
+      <div className="d-flex justify-content-end p-2">
       <Dark />
+      </div>
       <Switch>
 
            <Route path="/" component={Home} exact/>
