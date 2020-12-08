@@ -1,5 +1,4 @@
 import React,{Component} from 'react';
-import './App.css';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import {Home, About, GlobalMap, Navigation, Dark,Footer} from './components'
 
@@ -18,8 +17,7 @@ class App extends Component {
       <Dark />
       </div>
       <Switch>
-
-           <Route path="/" component={Home} exact/>
+           <Route path="" component={Home} exact/>
            <Route path="/about" component={About}/>
            <Route path="/GlobalMap" component={GlobalMap}/>
          </Switch>

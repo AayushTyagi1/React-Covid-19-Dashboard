@@ -10,7 +10,7 @@ import CountUp from 'react-countup';
 const Cards = ({data:{confirmed, recovered, deaths, lastUpdate}}) => {
     if(!confirmed)
     {
-        return <Spinner animation="border" />;
+        return <Spinner animation="border"/>;
     }
     return(
         <div className='container' id="cardContainer">
