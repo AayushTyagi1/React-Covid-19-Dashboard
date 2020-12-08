@@ -10,14 +10,14 @@ export default () => {
       onChange={() => {
         setIsDarkMode(document.body.classList.toggle("dark-mode"));
         if (document.body.classList.contains("dark-mode")) {
-          document.getElementById("infected").classList.add("newstyle");
-          document.getElementById("recovered").classList.add("newstyle");
-          document.getElementById("deaths").classList.add("newstyle");
+          document.getElementById("infected").classList.add("bg-dark");
+          document.getElementById("recovered").classList.add("bg-dark");
+          document.getElementById("deaths").classList.add("bg-dark");
         }
         else{
-        document.getElementById("infected").classList.remove("newstyle");
-        document.getElementById("recovered").classList.remove("newstyle");
-        document.getElementById("deaths").classList.remove("newstyle");
+        document.getElementById("infected").classList.remove("bg-dark");
+        document.getElementById("recovered").classList.remove("bg-dark");
+        document.getElementById("deaths").classList.remove("bg-dark");
         }
       }}
       checked={isDarkMode}
