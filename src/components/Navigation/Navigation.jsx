@@ -6,9 +6,9 @@ import GithubCorner from '../GithubCorner/GithubCorner'
  
 const Navigation = () => {
     return (
-      <Navbar dark color='dark bg-dark' className="p-0">
+      <Navbar className="p-0 navbar">
       <div  id="appcontainer">
-      <NavbarBrand className="p-2" href="/">COVID-19 Dashboard</NavbarBrand>
+      <NavbarBrand className="p-2 navbar-light" href="/">COVID-19 Dashboard</NavbarBrand>
       </div>
           <Nav>
         <NavItem className='p-2'>

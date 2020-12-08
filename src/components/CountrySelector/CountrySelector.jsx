@@ -14,7 +14,7 @@ const CountrySelector = ({ handleCountryChange}) => {
             fetchAPI();
         },[setFetchedCountries]);
     return(
-        <FormControl className="form-control col-3">
+        <FormControl id = "form"className="form-control col-3 bg-info">
             <NativeSelect defaultValue="" onChange={(e)=>handleCountryChange(e.target.value)}>
                 <option value="" key="global">Global</option>
                 {fetchedCountries.map((country,i)=><option key={i} value={country}>{country}</option>

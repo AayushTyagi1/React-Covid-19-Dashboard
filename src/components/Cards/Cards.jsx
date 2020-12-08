@@ -15,7 +15,7 @@ const Cards = ({data:{confirmed, recovered, deaths, lastUpdate}}) => {
     return(
         <div className='container' id="cardContainer">
         <div className="row justify-content-center">
-        <Card id="infected" className="col-xs-12 col-sm-3 changedark" height="auto">
+        <Card id="infected" className="col-xs-12 col-sm-3 card-style" height="auto">
             <CardBody>
                     <CardTitle className="h1 font-weight-bolder">Infected</CardTitle>
                     <div className="d-none d-sm-block">
@@ -37,7 +37,7 @@ const Cards = ({data:{confirmed, recovered, deaths, lastUpdate}}) => {
                 </CardBody>
         </Card>
 
-        <Card id="recovered" className="col-xs-12 col-sm-3 offset-sm-1" height="auto">
+        <Card id="recovered" className="col-xs-12 col-sm-3 offset-sm-1 card-style" height="auto">
             <CardBody>
                     <CardTitle className="h1 font-weight-bolder">Recovered</CardTitle>
                     <div className="d-none d-sm-block">
@@ -60,7 +60,7 @@ const Cards = ({data:{confirmed, recovered, deaths, lastUpdate}}) => {
                 </CardBody>
         </Card>
  
-        <Card id="deaths" className="col-xs-12 col-sm-3 offset-sm-1" height="auto">
+        <Card id="deaths" className="col-xs-12 col-sm-3 offset-sm-1 card-style" height="auto">
             <CardBody>
                     <CardTitle className="h1 font-weight-bolder" >Deaths</CardTitle>
                     <div className="d-none d-sm-block">

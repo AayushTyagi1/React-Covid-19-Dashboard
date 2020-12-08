@@ -16,7 +16,10 @@
 #deaths {
   border-bottom: 8px solid rgba(255, 0, 0, 0.5);
 }
-
+.card-style {
+  background: #ffecd1;
+  color: #78290f;
+}
 .col {
   flex: 1;
   padding: 16px;
