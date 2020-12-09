@@ -10,7 +10,7 @@ const Navigation = () => {
       <div id="appcontainer">
         <NavbarBrand
           className="p-2 navbar-light"
-          href="https://aayushtyagi1.github.io/COVID-19-Dashboard/"
+          href="https://aayushtyagi1.github.io/React-Covid-19-Dashboard/"
         >
           COVID-19 Dashboard
         </NavbarBrand>

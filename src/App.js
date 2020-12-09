@@ -25,7 +25,7 @@ class App extends Component {
         <Switch>
           <Route
             exact
-            path="/"
+            path="/React-Covid-19-Dashboard"
             component={Home}
             render={() => {
               return this.state.isUserAuthenticated ? (
@@ -35,7 +35,7 @@ class App extends Component {
               );
             }}
           />
-          <Route exact path="/" component={Home} />
+          <Route exact path="/React-Covid-19-Dashboard" component={Home} />
           <Route exact path="/about" component={About} />
           <Route exact path="/GlobalMap" component={GlobalMap} />
         </Switch>
