@@ -1,29 +1,29 @@
 {
   "files": {
-    "main.css": "/React-Covid-19-Dashboard.git/static/css/main.59dc0674.chunk.css",
-    "main.js": "/React-Covid-19-Dashboard.git/static/js/main.701695b9.chunk.js",
-    "main.js.map": "/React-Covid-19-Dashboard.git/static/js/main.701695b9.chunk.js.map",
-    "runtime-main.js": "/React-Covid-19-Dashboard.git/static/js/runtime-main.cc03fc88.js",
-    "runtime-main.js.map": "/React-Covid-19-Dashboard.git/static/js/runtime-main.cc03fc88.js.map",
-    "static/css/2.2a86faee.chunk.css": "/React-Covid-19-Dashboard.git/static/css/2.2a86faee.chunk.css",
-    "static/js/2.befcd174.chunk.js": "/React-Covid-19-Dashboard.git/static/js/2.befcd174.chunk.js",
-    "static/js/2.befcd174.chunk.js.map": "/React-Covid-19-Dashboard.git/static/js/2.befcd174.chunk.js.map",
-    "index.html": "/React-Covid-19-Dashboard.git/index.html",
-    "precache-manifest.ec719d45b74971b591192a742690bb17.js": "/React-Covid-19-Dashboard.git/precache-manifest.ec719d45b74971b591192a742690bb17.js",
-    "service-worker.js": "/React-Covid-19-Dashboard.git/service-worker.js",
-    "static/css/2.2a86faee.chunk.css.map": "/React-Covid-19-Dashboard.git/static/css/2.2a86faee.chunk.css.map",
-    "static/css/main.59dc0674.chunk.css.map": "/React-Covid-19-Dashboard.git/static/css/main.59dc0674.chunk.css.map",
-    "static/js/2.befcd174.chunk.js.LICENSE.txt": "/React-Covid-19-Dashboard.git/static/js/2.befcd174.chunk.js.LICENSE.txt",
-    "static/media/VirusCovid.png": "/React-Covid-19-Dashboard.git/static/media/VirusCovid.1f02c967.png",
-    "static/media/About.css": "/React-Covid-19-Dashboard.git/static/media/background.c95b8eb0.png",
-    "static/media/github.28478c45.svg": "/React-Covid-19-Dashboard.git/static/media/github.28478c45.svg",
-    "static/media/infected.jpg": "/React-Covid-19-Dashboard.git/static/media/infected.41e6d9ac.jpg"
+    "main.css": "/React-Covid-19-Dashboard/static/css/main.45482600.chunk.css",
+    "main.js": "/React-Covid-19-Dashboard/static/js/main.36d4385c.chunk.js",
+    "main.js.map": "/React-Covid-19-Dashboard/static/js/main.36d4385c.chunk.js.map",
+    "runtime-main.js": "/React-Covid-19-Dashboard/static/js/runtime-main.fbf934b2.js",
+    "runtime-main.js.map": "/React-Covid-19-Dashboard/static/js/runtime-main.fbf934b2.js.map",
+    "static/css/2.2a86faee.chunk.css": "/React-Covid-19-Dashboard/static/css/2.2a86faee.chunk.css",
+    "static/js/2.c39eaa3a.chunk.js": "/React-Covid-19-Dashboard/static/js/2.c39eaa3a.chunk.js",
+    "static/js/2.c39eaa3a.chunk.js.map": "/React-Covid-19-Dashboard/static/js/2.c39eaa3a.chunk.js.map",
+    "index.html": "/React-Covid-19-Dashboard/index.html",
+    "precache-manifest.59039b331c82195d257339394b2c32e5.js": "/React-Covid-19-Dashboard/precache-manifest.59039b331c82195d257339394b2c32e5.js",
+    "service-worker.js": "/React-Covid-19-Dashboard/service-worker.js",
+    "static/css/2.2a86faee.chunk.css.map": "/React-Covid-19-Dashboard/static/css/2.2a86faee.chunk.css.map",
+    "static/css/main.45482600.chunk.css.map": "/React-Covid-19-Dashboard/static/css/main.45482600.chunk.css.map",
+    "static/js/2.c39eaa3a.chunk.js.LICENSE.txt": "/React-Covid-19-Dashboard/static/js/2.c39eaa3a.chunk.js.LICENSE.txt",
+    "static/media/VirusCovid.png": "/React-Covid-19-Dashboard/static/media/VirusCovid.1f02c967.png",
+    "static/media/About.css": "/React-Covid-19-Dashboard/static/media/background.c95b8eb0.png",
+    "static/media/github.28478c45.svg": "/React-Covid-19-Dashboard/static/media/github.28478c45.svg",
+    "static/media/infected.jpg": "/React-Covid-19-Dashboard/static/media/infected.41e6d9ac.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.cc03fc88.js",
+    "static/js/runtime-main.fbf934b2.js",
     "static/css/2.2a86faee.chunk.css",
-    "static/js/2.befcd174.chunk.js",
-    "static/css/main.59dc0674.chunk.css",
-    "static/js/main.701695b9.chunk.js"
+    "static/js/2.c39eaa3a.chunk.js",
+    "static/css/main.45482600.chunk.css",
+    "static/js/main.36d4385c.chunk.js"
   ]
 }
