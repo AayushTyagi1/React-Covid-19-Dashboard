@@ -27,7 +27,6 @@ class Home extends Component {
           <CountrySelector handleCountryChange={this.handleCountryChange} />
         </div>
         <Cards data={data} />
-
         <Charts data={data} country={country} />
       </div>
     );
