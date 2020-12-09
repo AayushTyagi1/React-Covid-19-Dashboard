@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a34895e1ee0b097e7c84d07610795121",
+    "revision": "f75eece81b21eafdc9d30101e2952980",
     "url": "/React-Covid-19-Dashboard/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/React-Covid-19-Dashboard/static/css/2.2a86faee.chunk.css"
   },
   {
-    "revision": "25073e1d59b9a214f4f2",
+    "revision": "36ef041a02d2e83f4c4a",
     "url": "/React-Covid-19-Dashboard/static/css/main.45482600.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/React-Covid-19-Dashboard/static/js/2.c39eaa3a.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "25073e1d59b9a214f4f2",
-    "url": "/React-Covid-19-Dashboard/static/js/main.36d4385c.chunk.js"
+    "revision": "36ef041a02d2e83f4c4a",
+    "url": "/React-Covid-19-Dashboard/static/js/main.7784d3f3.chunk.js"
   },
   {
     "revision": "641d0a87042d28d60f0b",
