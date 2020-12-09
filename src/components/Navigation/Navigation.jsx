@@ -17,7 +17,7 @@ const Navigation = () => {
       </div>
       <Nav>
         <NavItem className="p-2">
-          <NavLink to="/" exact className="navbar-light">
+          <NavLink to="/" exact active className="navbar-light">
             Home
           </NavLink>
         </NavItem>
