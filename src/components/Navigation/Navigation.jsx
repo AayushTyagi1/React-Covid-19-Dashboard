@@ -17,7 +17,12 @@ const Navigation = () => {
       </div>
       <Nav>
         <NavItem className="p-2">
-          <NavLink to="/" exact active className="navbar-light">
+          <NavLink
+            to="/React-Covid-19-Dashboard"
+            exact
+            active
+            className="navbar-light"
+          >
             Home
           </NavLink>
         </NavItem>
