@@ -1,5 +1,4 @@
 .Home {
-  text-align: center;
   display: flex;
   flex-direction: column;
   flex-flow: column;
@@ -18,11 +17,4 @@
 
 body {
   background-color: #15616d;
-}
-
-#appcontainer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
 }

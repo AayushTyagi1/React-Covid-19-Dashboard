@@ -1,18 +1,25 @@
+#cardContainer {
+  margin: 10px, 0;
+  padding: 10px;
+}
 .Card {
   margin: 0 2% !important;
 }
 
-#infected {
+#infected1 {
   border-bottom: 8px solid rgba(0, 0, 255, 0.5);
-  width: 60%;
+  object-fit: cover;
+  width: 60vh;
 }
-#recovered {
+#recovered1 {
   border-bottom: 8px solid rgba(0, 255, 0, 0.5);
-  width: 60%;
+  object-fit: cover;
+  width: 60vh;
 }
-#deaths {
+#deaths1 {
   border-bottom: 8px solid rgba(255, 0, 0, 0.5);
-  width: 60%;
+  object-fit: cover;
+  width: 60vh;
 }
 .card-style {
   background: #ffecd1;
@@ -20,7 +27,7 @@
 }
 .col {
   flex: 1;
-  padding: 1px;
+  padding: 16px;
 }
 
 .h1 {

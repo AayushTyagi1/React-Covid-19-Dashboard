@@ -1,7 +1,7 @@
 #chartContainer {
   margin: 10px, 0;
-  height: 90%;
-  padding-top: 100px;
+  padding: 10px;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
