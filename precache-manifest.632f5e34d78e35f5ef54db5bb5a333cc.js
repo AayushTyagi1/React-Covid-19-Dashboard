@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "63731c1f162c7cddee0ca1f395796b04",
+    "revision": "42a1066affe5954908f66c52490fd5a8",
     "url": "/React-Covid-19-Dashboard/index.html"
   },
   {
-    "revision": "5278b4ea2ac4031e9dc1",
-    "url": "/React-Covid-19-Dashboard/static/css/2.2a86faee.chunk.css"
+    "revision": "50fcf0b58f79799dd016",
+    "url": "/React-Covid-19-Dashboard/static/css/2.31b724fd.chunk.css"
   },
   {
-    "revision": "e54438c7530eb602538f",
-    "url": "/React-Covid-19-Dashboard/static/css/main.45482600.chunk.css"
+    "revision": "c80dacab63cba16a7fa9",
+    "url": "/React-Covid-19-Dashboard/static/css/main.89a9deeb.chunk.css"
   },
   {
-    "revision": "5278b4ea2ac4031e9dc1",
-    "url": "/React-Covid-19-Dashboard/static/js/2.c39eaa3a.chunk.js"
+    "revision": "50fcf0b58f79799dd016",
+    "url": "/React-Covid-19-Dashboard/static/js/2.7cef7961.chunk.js"
   },
   {
     "revision": "6f59eb250dc4ad89c49aec19441a869c",
-    "url": "/React-Covid-19-Dashboard/static/js/2.c39eaa3a.chunk.js.LICENSE.txt"
+    "url": "/React-Covid-19-Dashboard/static/js/2.7cef7961.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "e54438c7530eb602538f",
-    "url": "/React-Covid-19-Dashboard/static/js/main.19905e6d.chunk.js"
+    "revision": "c80dacab63cba16a7fa9",
+    "url": "/React-Covid-19-Dashboard/static/js/main.3c4dc95c.chunk.js"
   },
   {
     "revision": "641d0a87042d28d60f0b",
